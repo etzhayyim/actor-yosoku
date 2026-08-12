@@ -1,4 +1,10 @@
-# com-etzhayyim-yosoku
+# actor-yosoku
+
+Canonical repository: `etzhayyim/actor-yosoku`. This governed scenario
+simulation organ belongs to the Tamaki-centered Etzhayyim artificial
+organism. It may propose and simulate bounded scenarios, while the independent
+ScenarioGovernor and human escalation boundary retain commit authority. The
+former `com-etzhayyim-yosoku` name remains a compatibility redirect.
 
 予測 (yosoku — "forecast/prediction") — a **governed System-Dynamics scenario
 simulation actor**. Built on this workspace's
@@ -90,11 +96,8 @@ clojure -M:dev:test    # scenario contract · store parity · advisor · governo
 clojure -M:lint        # clj-kondo (errors fail; CI mirrors this)
 ```
 
-> CI: `.github/workflows/ci.yml` runs lint + the full suite (it reconstructs
-> the west workspace layout by checking out the public `langgraph-clj`
-> sibling repo). `org-oasis-open-xmile` is a plain `:git/sha` dependency and
-> needs no sibling checkout — tools.deps fetches it over the network, same
-> as its own `dsl-core` dependency.
+> CI is provided by the murakumo fleet. The test suite expects the west
+> workspace layout so the local `langgraph` dependency resolves.
 
 Demo output walks five proposals: a brand-new model (**commit**) → a
 model with a dangling reference (**structural reject → hold**) → an
