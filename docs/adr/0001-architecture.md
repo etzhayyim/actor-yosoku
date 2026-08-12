@@ -1,4 +1,4 @@
-# ADR-0001: com-etzhayyim-yosoku — SD-Advisor を封じ込めた System-Dynamics シナリオ・シミュレーション actor 設計
+# ADR-0001: actor-yosoku — SD-Advisor を封じ込めた System-Dynamics シナリオ・シミュレーション actor 設計
 
 - Status: Accepted (2026-07-07)
 - 関連: gftd-talent-actor ADR-0001 (HR-LLM を封じ込めたタレントマネジメント actor 設計 — 同型の
