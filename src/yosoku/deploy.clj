@@ -14,7 +14,7 @@
   Env:   YOSOKU_OLLAMA_URL (default http://127.0.0.1:11434)
          YOSOKU_OLLAMA_MODEL (default gemma-4-E4B qat)"
   (:require [clojure.data.json :as json]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [langchain.model :as model]
             [langgraph.graph :as g]
             [yosoku.advisor :as advisor]
@@ -38,7 +38,7 @@
   [{:keys [url method headers body]}]
   (let [b (HttpRequest/newBuilder (URI/create url))]
     (doseq [[k v] headers] (.header b k v))
-    (let [req  (-> b (.method (str/upper-case (name (or method :post)))
+    (let [req  (-> b (.method (str/upper (name (or method :post)))
                              (if body
                                (HttpRequest$BodyPublishers/ofString body)
                                (HttpRequest$BodyPublishers/noBody)))

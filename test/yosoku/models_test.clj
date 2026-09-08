@@ -4,7 +4,7 @@
   model (distinct from the three governor-contract fixtures, which have no
   dedicated test namespace of their own since they're already exercised
   end-to-end by governor_test/advisor_test/scenario_test)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is testing]]
             [xmile.validate :as validate]
             [xmile.execute :as execute]
