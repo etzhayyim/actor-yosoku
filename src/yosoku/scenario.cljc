@@ -18,7 +18,7 @@
   such key as an `:unknown-variable` violation, so the two concerns don't
   silently overlap: the candidate never drifts from the base on an unknown
   key, and the governor still tells you it happened."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (defn apply-patch
   "Merge `patch` onto `base-model`, returning the candidate model. `base-model`
