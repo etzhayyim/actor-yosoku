@@ -26,7 +26,10 @@
         ;; west): kotoba-lang/kotoba-net main tip, 2026-09-08.
         io.github.kotoba-lang/kotoba-net
         {:git/sha "251dc4278f21dce4aa4056afdd8fdca0d1097445"}
-        org.clojure/data.json {:mvn/version "2.5.1"}} ; yosoku.deploy real-LLM json (same as tashikame/kouhou)
+        ;; json.data-json is a data.json-shaped shim on json.core; pinned as
+        ;; an explicit floor (tools.deps takes the newest sha it is shown).
+        io.github.kotoba-lang/json
+        {:git/sha "4e33e06b4d66b365d27a51393a16a0acd660f9be"}} ; yosoku.deploy real-LLM json (same as tashikame/kouhou)
  :aliases
  {;; This alias held an :override-deps entry for the retired coordinate
   ;; io.github.com-junkawasaki/langchain-clj. langgraph declares the same
