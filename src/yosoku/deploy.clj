@@ -13,7 +13,7 @@
   Usage: clojure -M:dev -m yosoku.deploy \"<intent>\" [model-id]
   Env:   YOSOKU_OLLAMA_URL (default http://127.0.0.1:11434)
          YOSOKU_OLLAMA_MODEL (default gemma-4-E4B qat)"
-  (:require [clojure.data.json :as json]
+  (:require [json.data-json :as json]
             [langchain.model :as model]
             [langgraph.graph :as g]
             [yosoku.advisor :as advisor]
