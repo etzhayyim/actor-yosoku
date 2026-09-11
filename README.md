@@ -112,13 +112,13 @@ immutable audit ledger and proves the same contract holds against
 
 | File | Actor / role |
 |---|---|
-| `src/yosoku/models.cljc` | canned XMILE models (`community-growth` demo model + deliberately-broken/implausible fixtures) built on `xmile.model` |
-| `src/yosoku/scenario.cljc` | pure patch-application helpers (`apply-patch`, `numeric-eqn`) shared by the governor (candidate construction) and the store (committing an approved patch) |
-| `src/yosoku/advisor.cljc` | **SD-Advisor** — `mock-advisor` (the only advisor shipped in v1; see Follow-ups) |
-| `src/yosoku/governor.cljc` | **ScenarioGovernor** — structural validity (`xmile.validate`) · unknown/protected variables · parameter bound · implausible output (`xmile.execute`) · confidence floor |
-| `src/yosoku/operation.cljc` | **ScenarioActor** — langgraph-clj StateGraph (1 run = 1 proposal); Store/Advisor injected |
-| `src/yosoku/store.cljc` | **Store** protocol — `MemStore` (default) ‖ `DatomicStore` (`langchain.db`, swappable to Datomic Local / kotoba-server) + append-only ledger |
-| `src/yosoku/sim.cljc` | demo driver |
+| `src/yosoku/models.cljk` | canned XMILE models (`community-growth` demo model + deliberately-broken/implausible fixtures) built on `xmile.model` |
+| `src/yosoku/scenario.cljk` | pure patch-application helpers (`apply-patch`, `numeric-eqn`) shared by the governor (candidate construction) and the store (committing an approved patch) |
+| `src/yosoku/advisor.cljk` | **SD-Advisor** — `mock-advisor` (the only advisor shipped in v1; see Follow-ups) |
+| `src/yosoku/governor.cljk` | **ScenarioGovernor** — structural validity (`xmile.validate`) · unknown/protected variables · parameter bound · implausible output (`xmile.execute`) · confidence floor |
+| `src/yosoku/operation.cljk` | **ScenarioActor** — langgraph-clj StateGraph (1 run = 1 proposal); Store/Advisor injected |
+| `src/yosoku/store.cljk` | **Store** protocol — `MemStore` (default) ‖ `DatomicStore` (`langchain.db`, swappable to Datomic Local / kotoba-server) + append-only ledger |
+| `src/yosoku/sim.cljk` | demo driver |
 | `test/yosoku/*_test.clj` | scenario patch helpers · governor policy rules (isolated) · advisor proposal shape · ScenarioActor contract (reject/hold/escalate/commit + ledger append-only) · store parity (Mem≡Datomic) — **39 tests / 129 assertions** |
 
 ## Backend / advisor swap (all injection)
