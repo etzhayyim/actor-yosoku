@@ -10,7 +10,7 @@
     op5  シナリオ介入（成長率を 0.5 へ急変更、bound 超）→ 人間承認へ escalate
                                                        → 承認 → commit
 
-  Run: clojure -M:dev:run"
+  Run: kbb -M:dev:run"
   (:require [langgraph.graph :as g]
             [yosoku.store :as store]
             [yosoku.operation :as op]))

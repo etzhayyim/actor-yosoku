@@ -91,9 +91,9 @@ mis-represents its own risk cannot buy its way past the governor.
 ## Run
 
 ```bash
-clojure -M:dev:run     # drive 5 representative proposals through one ScenarioActor
-clojure -M:dev:test    # scenario contract · store parity · advisor · governor · ledger
-clojure -M:lint        # clj-kondo (errors fail; CI mirrors this)
+kbb -M:dev:run     # drive 5 representative proposals through one ScenarioActor
+kbb -M:dev:test    # scenario contract · store parity · advisor · governor · ledger
+kbb -M:lint        # clj-kondo (errors fail; CI mirrors this)
 ```
 
 > CI is provided by the murakumo fleet. The test suite expects the west

@@ -10,7 +10,7 @@
   proposal here writes the in-process MemStore + audit ledger, nothing
   external.
 
-  Usage: clojure -M:dev -m yosoku.deploy \"<intent>\" [model-id]
+  Usage: kbb -M:dev -m yosoku.deploy \"<intent>\" [model-id]
   Env:   YOSOKU_OLLAMA_URL (default http://127.0.0.1:11434)
          YOSOKU_OLLAMA_MODEL (default gemma-4-E4B qat)"
   (:require [json.data-json :as json]
