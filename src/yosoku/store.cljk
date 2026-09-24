@@ -24,7 +24,7 @@
   convention gftd-talent-actor's store uses for its `:protected` maps and
   ledger facts) since a model's `:xmile/variables` map/`:xmile/inflows` sets
   aren't something this actor needs to query at the Datomic attribute level."
-  (:require #?(:clj  [clojure.edn :as edn]
+  (:require #?(:clj  [kotoba.lang.edn :as edn]
                :cljs [cljs.reader :as edn])
             [langchain.db :as d]
             [yosoku.models :as models]
