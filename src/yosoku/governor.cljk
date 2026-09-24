@@ -42,7 +42,7 @@
   the base model — never from the advisor's self-reported `:confidence`/
   `:stake`, so an advisor that mis-reports its own risk can't buy its way
   past the governor."
-  (:require [clojure.set :as set]
+  (:require [kotoba.lang.coll :as set]
             [xmile.model :as m]
             [xmile.validate :as validate]
             [xmile.execute :as execute]
