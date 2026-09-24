@@ -4,7 +4,7 @@
   makes 'swap the SSoT for Datomic' a configuration change, not a rewrite —
   the same guarantee gftd-talent-actor's store_contract_test proves for
   talent.store."
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [yosoku.models :as models]
             [yosoku.store :as store]))
 

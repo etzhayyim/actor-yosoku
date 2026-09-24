@@ -7,7 +7,7 @@
     append-only, never mutating a prior entry.
 
   MemStore + mock-advisor only — no real LLM calls anywhere in this file."
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [langgraph.graph :as g]
             [yosoku.operation :as op]
             [yosoku.store :as store]))

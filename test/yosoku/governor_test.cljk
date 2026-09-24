@@ -3,7 +3,7 @@
   a time. The single invariant under test: every HARD violation forces
   `:hard? true` (unconditional hold) and every SOFT violation forces
   `:escalate? true` (human decides) while never *also* claiming `:ok? true`."
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [yosoku.governor :as governor]
             [yosoku.models :as models]))
 

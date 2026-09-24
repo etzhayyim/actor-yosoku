@@ -6,7 +6,7 @@
   `langchain.model/mock-model` (fully offline/deterministic, no network) to
   prove the real-LLM wiring, prompt-building, and defensive EDN parsing are
   correct — they do NOT prove anything about a live Murakumo endpoint."
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [langchain.model :as model]
             [xmile.validate :as validate]
             [yosoku.advisor :as advisor]
